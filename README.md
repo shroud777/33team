@@ -13,7 +13,7 @@
 - 19-潘忠鸿：[![](http://cfrating.ihcr.top/?user=Feadil)](https://codeforces.com/profile/Feadil)
 - 19-潘友利：[![](http://cfrating.ihcr.top/?user=py_l)](https://codeforces.com/profile/py_l)
   	
-## 20200527~20200528
+## 20200527~20200529
 
 前缀和与差分：https://oi-wiki.org/basic/prefix-sum/
 
