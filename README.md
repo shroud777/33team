@@ -1,8 +1,5 @@
 # 33team
 
-冲冲冲，clone 到本地后创建自己的文件夹同步自己的代码，不要碰别人的文件夹。
-每次先 pull 再 commit+push 自己代码到自己文件夹。
-
 ## CodeForces
 
 - 15-代建杉：[![](http://cfrating.ihcr.top/?user=wood3s)](https://codeforces.com/profile/wood3s) [![](http://cfrating.ihcr.top/?user=wood3xuxu)](https://codeforces.com/profile/wood3xuxu)
