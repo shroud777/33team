@@ -9,7 +9,30 @@
 - 19-林仁豪：[![](http://cfrating.ihcr.top/?user=Lqingyi)](https://codeforces.com/profile/Lqingyi)
 - 19-潘忠鸿：[![](http://cfrating.ihcr.top/?user=Feadil)](https://codeforces.com/profile/Feadil)
 - 19-潘友利：[![](http://cfrating.ihcr.top/?user=py_l)](https://codeforces.com/profile/py_l)
-  	
+
+
+
+## 20200527~20200529
+
+树（看看OI-WIKI相关内容，也可以看看我的代码，非二叉树可以用一下我的模板快速写题）
+
+- LG_1305_新二叉树
+- LG_1087_FBI树
+- LG_3915_树的分解
+- NC_13886_Shortest Path
+- NC_22598_Rinne Loves Edges
+- NC_14248_Treepath
+
+| 题目       | 丁宇欣 | 潘友利 | 潘忠鸿 | 林仁豪 | 周正谊 |
+| ---------- | :----: | :----: | :----: | :----: | :----: |
+| A_LG_1305  |        |        |        |        |        |
+| B_LG_1087  |        |        |        |        |        |
+| C_LG_3915  |        |        |        |        |        |
+| D_NC_13886 |        |        |        |        |        |
+| E_NC_22598 |        |        |        |        |        |
+| F_NC_14248 |        |        |        |        |        |
+
+
 ## 20200527~20200529
 
 前缀和与差分：https://oi-wiki.org/basic/prefix-sum/
@@ -25,8 +48,8 @@
 | ---------- | :----: | :----: | :----: | :----: | :----: |
 | A_LG_1115  |   1    |   1    |   1    |   1    |   1    |
 | B_LG_5638  |   1    |   1    |   1    |   1    |   1    |
-| C_LG_2004  |   1    |        |   1    |   1    |   1    |
-| D_LG_3406  |        |        |   1    |   1    |   1    |
-| E_CF_1355C |        |        |   1    |   1    |   1    |
-| F_LG_4231  |        |        |   1    |   1    |   1    |
+| C_LG_2004  |   1    |   2    |   1    |   1    |   1    |
+| D_LG_3406  |   2    |   2    |   1    |   1    |   1    |
+| E_CF_1355C |   2    |   2    |   1    |   1    |   1    |
+| F_LG_4231  |   2    |   2    |   1    |   1    |   1    |
 
