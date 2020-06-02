@@ -18,7 +18,7 @@
 - HDU_5616_Jam's balance：01背包，wi与-wi两个物品，注意方向
 - POJ_2436_Disease Management：位运算，暴力二进制枚举
 
-扩展：树
+扩展：洛谷对应题解、[牛客每日一题](https://ac.nowcoder.com/discuss/390407)
 - LG_1305_新二叉树
 - LG_1087_FBI树
 - LG_3915_树的分解：dfs子树大小，大小为k的子树计数后减去
