@@ -17,12 +17,16 @@
 - POJ_1995_Raising Modulo Numbers：快速幂
 - HDU_5616_Jam's balance：01背包，wi与-wi两个物品，注意方向
 - POJ_2436_Disease Management：位运算，暴力二进制枚举
+- HDU_1157_权利指数：位运算，暴力二进制枚举
+- HDU_1060_Leftmost Digit：数学
+- HDU_3835_R(N)：数学、暴力枚举，二分查找
 
 扩展：洛谷对应题解、[牛客每日一题](https://ac.nowcoder.com/discuss/390407)
+
 - LG_1305_新二叉树
 - LG_1087_FBI树
 - LG_3915_树的分解：dfs子树大小，大小为k的子树计数后减去
-- NC_13886_Shortest Path：树上搜索，选边 
+- NC_13886_Shortes  t Path：树上搜索，选边 
 - NC_22598_Rinne Loves Edges：树形DP
 - NC_14248_Treepath：树上搜索
 
