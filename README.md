@@ -1,14 +1,22 @@
 # 33team
 
-## CodeForces
+[LG-LuoGu](https://www.luogu.com.cn/)、[LOJ-LibreOJ](https://loj.ac/)、[VJudge](https://vjudge.net/)、[CF-CodeForces](https://codeforces.com/)、[NC-NowCoder](https://www.nowcoder.com/)
 
-- 15-代建杉：[![](http://cfrating.ihcr.top/?user=wood3s)](https://codeforces.com/profile/wood3s) [![](http://cfrating.ihcr.top/?user=wood3xuxu)](https://codeforces.com/profile/wood3xuxu)
-- 16-罗巍豪：[![](http://cfrating.ihcr.top/?user=Deft_t)](https://codeforces.com/profile/Deft_t)
-- 18-丁宇欣：[![](http://cfrating.ihcr.top/?user=ant_boy)](https://codeforces.com/profile/ant_boy)
-- 19-周正谊：[![](http://cfrating.ihcr.top/?user=shroud777)](https://codeforces.com/profile/shroud777) 	 
-- 19-林仁豪：[![](http://cfrating.ihcr.top/?user=Lqingyi)](https://codeforces.com/profile/Lqingyi)
-- 19-潘忠鸿：[![](http://cfrating.ihcr.top/?user=Feadil)](https://codeforces.com/profile/Feadil)
-- 19-潘友利：[![](http://cfrating.ihcr.top/?user=py_l)](https://codeforces.com/profile/py_l)
+## 20200608~20200614
+
+扩展：
+
+- LG_3865_【模板】ST表：求解静态区间最大值，$O(n\log{n})$预处理，$O(1)$查询
+- LG_3374_【模板】树状数组 1：$O(\log{n})$ 单点修改、$O(\log{n})$ 区间和查询
+- LG_3368_【模板】树状数组 2：配合差分数组实现的$O(\log{n})$ 区间修改，$O(\log{n})$ 单点查询
+- LG_3372_【模板】线段树 1：带延迟标记的线段树，最基础单点修改区间查询的线段树可以用上面的树状数组1测试，$O(\log{n})$ 区间修改，$O(\log{n})$ 区间查询
+- LOJ_6279_数列分块入门 3：轻松一下，好理解的 $O(\sqrt{n})$ 时间复杂度算法，分块！可参考[这篇](https://www.luogu.com.cn/blog/deco/qian-tan-ji-chu-gen-hao-suan-fa-fen-kuai#)题解
+- LG_3373_【模板】线段树 2：线段树进阶，有区间加和区间乘的线段树，可选题。
+
+以上为基础的一系列数据结构，不要一道题一道题自己想，一道题一道题自己学就好，学会了要能看懂模板代码，并至少能手打出来一次，然后就是要保存好自己风格的模板方便后面使用。
+
+特别需要注意不同数据结构能处理的问题、对应的时间复杂度常数和空间复杂度，线段树是初级阶段的究极数据结构，可以自己想想线段树的区间修改、区间最值查询怎么处理，自己找找题做做。
+
 
 ## 20200601~20200607
 
