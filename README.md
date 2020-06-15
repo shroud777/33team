@@ -2,8 +2,13 @@
 
 [LG-LuoGu](https://www.luogu.com.cn/)、[LOJ-LibreOJ](https://loj.ac/)、[VJudge](https://vjudge.net/)、[CF-CodeForces](https://codeforces.com/)、[NC-NowCoder](https://www.nowcoder.com/)
 
-## 20200608~20200614
+## 20200615~20200621
 
+扩展：
+
+- LCA问题：倍增算法、dfs序配合st表方法、tarjan算法
+
+## 20200608~20200614
 
 校内专题：二分查找二分答案
 
