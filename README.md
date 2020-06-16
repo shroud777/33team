@@ -3,6 +3,17 @@
 [LG-LuoGu](https://www.luogu.com.cn/)、[LOJ-LibreOJ](https://loj.ac/)、[VJudge](https://vjudge.net/)、[CF-CodeForces](https://codeforces.com/)、[NC-NowCoder](https://www.nowcoder.com/)
 
 ## 20200615~20200621
+校内专题：kmp与manacher
+
+- HDU_2594_Simpsons’ Hidden Talents：扩展KMP模板题
+- HDU_2087_剪花布条：KMP
+- HDU_4763_Theme Section：前缀函数。min(max(中间),最后一个)
+- HDU_3336_Count the string：前缀函数。n+count(nxt[]>0)
+- HDU_3068_最长回文：manacher模板题
+- HDU_3294_Girls' research：manacher，输出对应最长回文串
+- HDU_1238_Substrings：kmp、枚举检验
+- HDU_2609_How many：最小表示法、set计数
+- HDU_3069_Arrest：树上DP
 
 扩展：
 
