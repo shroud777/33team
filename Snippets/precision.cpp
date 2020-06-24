@@ -1,0 +1,1 @@
+    cout << fixed << setprecision(4) <<  << endl;
