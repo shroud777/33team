@@ -15,17 +15,13 @@ int main(){
 		for(int i=1;i<=n;i++) cin>>a[i];
 		sort(a+1,a+1+n,greater<int>());
 		int ans=0;
+		int cnt=1;
 		for(int i=1;i<=n;i++){
-			int cnt=1;
-			bool f=0;
-			for(int j=i;j<=n;j++){
-				if(a[j]*(j-i+1)>=x){
-					f=1;
-					i=j;
-					break;
-				}
+			if(a[i]*cnt>=x){
+				ans++;
+				cnt=0;
 			}
-			if(f) ans++;
+			cnt++;
 		}
 		cout<<ans<<endl;
 	} 
