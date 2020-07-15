@@ -2,6 +2,8 @@
 
 //思路：没啥好说的，线段树区间更新为某个数，注意下细节，练练手
 
+//区间覆盖其实可以直接用 lazy，时空复杂度都提升了
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -69,5 +71,59 @@ int main(){
 		L=1,R=n;
 		printf("Case %d: The total value of the hook is %lld.\n",++T,query(1,n,1));
 	} 
+	return 0;
+}
+
+//只改lazy
+
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+#define INF 0x3f3f3f3f
+const int maxn=1e5+10;
+ll lazy[maxn*4];
+int n,q,L,R;
+inline void put_lazy(int l,int r,int x,ll k){
+	lazy[x]=k;
+}
+inline void down_lazy(int l,int r,int x){
+	int mid=l+r>>1; 
+	put_lazy(l,mid,x<<1,lazy[x]);
+	put_lazy(mid+1,r,x<<1|1,lazy[x]);
+	lazy[x]=0;
+}
+void modify(int l, int r,int x,ll k){
+	if(L<=l&&r<=R){
+		put_lazy(l,r,x,k);
+		return;
+	}
+	if(lazy[x]) down_lazy(l,r,x);
+	int mid=l+r>>1;
+	if(L<=mid) modify(l,mid,x<<1,k);
+	if(mid<R) modify(mid+1,r,x<<1|1,k);
+}
+ll query(int l,int r,int x){
+	if(lazy[x]) return lazy[x]*(r-l+1);
+	ll ans=0;
+	int mid=l+r>>1;
+	ans+=query(l,mid,x<<1);
+	ans+=query(mid+1,r,x<<1|1);
+	return ans; 
+}
+int main(){
+	int t,T=0;
+	scanf("%d",&t);
+	while(t--){
+		memset(lazy,0,sizeof lazy);
+		scanf("%d",&n);
+		lazy[1]=1;
+		scanf("%d",&q);
+		while(q--){
+			ll k;
+			scanf("%d %d %d",&L,&R,&k);
+			modify(1,n,1,k);
+		}
+		printf("Case %d: The total value of the hook is %lld.\n",++T,query(1,n,1));
+	}
 	return 0;
 }
