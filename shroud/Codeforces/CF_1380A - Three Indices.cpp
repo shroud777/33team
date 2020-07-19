@@ -2,6 +2,7 @@
 
 //思路:看数据可以暴力枚举下标然后从中间像两边扩展。
 
+//O(n^2)
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -44,3 +45,42 @@ int main(){
 	} 
 	return 0;
 } 
+
+//O(n)
+#include <bits/stdc++.h>
+using namespace std;
+#define INF 0x3f3f3f3f
+int suf[1005],pre[1005],a[1005];
+int main(){
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	int t;
+	cin>>t;
+	int n;
+	while(t--){
+		cin>>n;
+		for(int i=0;i<=n+1;i++) suf[i]=pre[i]=INF;
+		for(int i=1;i<=n;i++){
+			cin>>a[i];
+			if(i>1) pre[i]=min(a[i-1],pre[i-1]);
+		}
+		for(int i=n-1;i>=1;i--) suf[i]=min(suf[i+1],a[i+1]);
+		bool f=0;
+		int x,y,z;
+		for(int i=1;i<=n;i++){
+			if(a[i]>pre[i]&&a[i]>suf[i]){
+				f=1;
+				y=i;
+				for(int j=i;j>0;j--) if(a[i]>a[j]) {x=j;break;}
+				for(int j=i;j<=n;j++) if(a[i]>a[j]) {z=j;break;}
+				break;
+			}
+		}
+		if(f){
+			cout<<"YES"<<endl;
+			cout<<x<<" "<<y<<" "<<z<<endl;
+		}
+		else cout<<"NO"<<endl;
+	}
+	return 0;
+}
