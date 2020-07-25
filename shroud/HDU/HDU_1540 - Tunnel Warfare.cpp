@@ -5,7 +5,9 @@
 //对于每个 modify，只需要找到正确的单点区间后，修改后并及时 update 即可
 //对于每个 query，这是这道题的精髓之一，如果当前要查找的位置 pos，在当前区间的左子区间，那就判断 pos 能否包含在左子区间的 rmax 中，如果包含同时加上右子区间的 lmax。如果不包含，则继续递归左子区间，找到 pos
 //如果在右区间也类似，而 ms 的值在这时起到了剪枝的作用，如果当前区间的 ms 值等于 0，说明区间里没有任何村庄剩余了，返回 0 即可，对于每个叶结点，返回叶结点的信息即可
+//还可以用树状数组并用二分实现高效查找，以及stl的set也可行
 
+//线段树
 #include <iostream>
 #include <cstdio>
 using namespace std;
@@ -82,6 +84,41 @@ int main(){
 				printf("%d\n",query(1,n,1,x));
 			}
 		} 
+	}
+	return 0;
+}
+
+
+//set
+#include <iostream>
+#include <set>
+using namespace std;
+const int maxn=5e4+10;
+int n,m;
+char ch[0];
+int tot,stack[maxn];
+int main(){
+	while(~scanf("%d %d",&n,&m)){
+		set<int> s;
+		tot=0;
+		int x;
+		while(m--){
+			scanf("%s",ch);
+			if(ch[0]=='D'){
+				scanf("%d",&x);
+				s.insert(x);	
+				stack[++tot]=x;
+			}
+			else if(ch[0]=='R') s.erase(stack[tot--]);
+			else{
+				scanf("%d",&x);
+				set<int> ::iterator it=s.lower_bound(x);
+				int r=(it==s.end()?n+1:*it);
+				int l=(it==s.begin()?0:*(--it));
+				if(r==x) printf("0\n");
+				else printf("%d\n",r-l-1);
+			}
+		}
 	}
 	return 0;
 }
