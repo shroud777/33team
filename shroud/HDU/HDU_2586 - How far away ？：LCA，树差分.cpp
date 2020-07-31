@@ -2,6 +2,9 @@
 
 //思路：LCA入门题，先用倍增lca求得最近公共祖先，然后两点间的距离就是 u 到根的距离+ v 到根的距离 - 2*lca到根的距离
 
+
+//倍增
+
 #include <iostream>
 #include <algorithm>
 #include <cstdio>
@@ -80,3 +83,76 @@ int main(){
 	}
 	return 0;
 } 
+
+
+//tarjan
+#include <iostream>
+#include <algorithm>
+#include <cstdio>
+#include <cstring>
+#include <vector>
+using namespace std;
+typedef long long ll;
+typedef pair<int,int> pii;
+const int maxn=4e4+10;
+int n,m,q;
+int head[maxn],to[maxn<<1],w[maxn<<1],nex[maxn<<1],tot;
+int ans[maxn],vis[maxn],fa[maxn],dis[maxn];
+vector<pii> g[maxn];
+
+
+void init(){
+	for(int i=1;i<=n;i++){
+		head[i]=vis[i]=0;
+		fa[i]=i; 
+	}
+}
+
+inline int find(int x){return x==fa[x]?x:fa[x]=find(fa[x]);}
+
+void add(int u,int v,int c){
+	to[++tot]=v;
+	w[tot]=c;
+	nex[tot]=head[u];
+	head[u]=tot;
+}
+
+void dfs(int u,int f){
+	for(int i=head[u];i;i=nex[i]){
+		if(to[i]!=f){
+			dis[to[i]]=dis[u]+w[i];
+			dfs(to[i],u);
+		}
+	}
+	for(int i=0;i<g[u].size();i++){
+		int j=g[u][i].first,id=g[u][i].second;
+		if(vis[j]) ans[id]=dis[u]+dis[j]-2*dis[find(j)];
+	}
+	vis[u]=1;
+	fa[u]=f;
+}
+
+int main(){
+	int t;
+	scanf("%d",&t);
+	while(t--){
+		scanf("%d %d",&n,&q);
+		init();
+		m=n-1;
+		int u,v,c;
+		while(m--){
+			scanf("%d %d %d",&u,&v,&c);
+			add(u,v,c);
+			add(v,u,c);
+		}
+		for(int i=1;i<=q;i++){
+			scanf("%d %d",&u,&v);
+			g[u].push_back(pii(v,i));
+			g[v].push_back(pii(u,i));
+		}
+		dis[1]=0;
+		dfs(1,0);
+		for(int i=1;i<=q;i++) printf("%lld\n",ans[i]);
+	}
+	return 0;
+}
