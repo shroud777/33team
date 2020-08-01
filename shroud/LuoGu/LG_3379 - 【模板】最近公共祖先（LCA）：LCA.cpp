@@ -2,7 +2,8 @@
 
 //思路：模板
 
-//倍增算法：
+//树上倍增：
+
 #include <iostream>
 #include <cstdio>
 #include <cstring>
@@ -77,7 +78,7 @@ int main(){
 	return 0;
 }
 
-//tarjan算法
+//tarjan：
 
 #include <iostream>
 #include <cstdio>
@@ -140,5 +141,81 @@ int main(){
 	}
 	dfs(s,-1);
 	for(int i=1;i<=q;i++) cout<<ans[i]<<endl;
+	return 0;
+} 
+
+
+//欧拉序-RMQ：
+
+#include <iostream>
+#include <cstring>
+#include <cstdio>
+#include <algorithm>
+#include <cmath>
+using namespace std;
+const int maxn=5e5+10;
+const int maxlog=22;
+int n,m,q,s;
+int head[maxn],to[maxn<<1],nex[maxn<<1],tot;
+int dep[maxn],first[maxn],dfn[maxn<<1],len;
+int f[maxn<<1][maxlog+5];
+
+void init(){
+	tot=len=0;
+	for(int i=1;i<=n;i++) head[i]=0;
+}
+
+inline void add(int u,int v){
+	to[++tot]=v;
+	nex[tot]=head[u];
+	head[u]=tot;
+} 
+
+void dfs(int u,int f){
+	dfn[++len]=u;
+	first[u]=len;
+	for(int i=head[u];i;i=nex[i]){
+		if(to[i]==f) continue;
+		dep[to[i]]=dep[u]+1;
+		dfs(to[i],u);
+		dfn[++len]=u;
+	}
+}
+
+void init_RMQ(){
+	for(int i=1;i<=len;i++) f[i][0]=dfn[i];
+	for(int j=1;(1<<j)<=len;j++){
+		for(int i=1;i+(1<<j)-1<=len;i++){
+			if(dep[f[i][j-1]]<dep[f[i+(1<<j-1)][j-1]]) f[i][j]=f[i][j-1];
+			else f[i][j]=f[i+(1<<j-1)][j-1];
+		}
+	}
+} 
+
+inline int query(int u,int v){
+	u=first[u];
+	v=first[v];
+	if(u>v) swap(u,v); 
+	int d=log2(v-u+1);
+	if(dep[f[u][d]]<dep[f[v-(1<<d)+1][d]]) return f[u][d];
+	return f[v-(1<<d)+1][d];
+}
+
+int main(){
+	scanf("%d %d %d",&n,&q,&s);
+	init();
+	m=n-1;
+	int u,v;
+	while(m--){
+		scanf("%d %d",&u,&v);
+		add(u,v);
+		add(v,u);
+	}
+	dfs(s,0);
+	init_RMQ();
+	while(q--){
+		scanf("%d %d",&u,&v);
+		printf("%d\n",query(u,v));
+	} 
 	return 0;
 } 
