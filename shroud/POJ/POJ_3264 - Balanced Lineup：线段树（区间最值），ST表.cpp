@@ -2,6 +2,9 @@
 
 //思路：lazy-tag 中设置两个信息分别维护区间最大值最小值即可
 
+
+//线段树
+
 #include <iostream>
 #include <cstdio>
 using namespace std;
@@ -57,3 +60,59 @@ int main(){
 	}
 	return 0;
 }
+
+//ST表
+#include <iostream>
+#include <algorithm>
+#include <cstdio>
+#include <cstring>
+#include <vector>
+#include <cmath>
+using namespace std;
+typedef long long ll;
+typedef pair<int,int> pii;
+const int maxn=5e4+10;
+const int maxlog=22;
+int n,q;
+int mi[maxn][maxlog+5],mx[maxn][maxlog+5];
+
+void st(){
+	for(int j=1;(1<<j)<=n;j++){
+		for(int i=1;i+(1<<j)-1<=n;i++){
+			mi[i][j]=min(mi[i][j-1],mi[i+(1<<j-1)][j-1]);
+			mx[i][j]=max(mx[i][j-1],mx[i+(1<<j-1)][j-1]);
+		}
+	}	
+}
+
+inline int query_min(int x,int y){
+	if(x>y) swap(x,y);
+	int d=log2(y-x+1);
+	return min(mi[x][d],mi[y-(1<<d)+1][d]);
+}
+
+
+inline int query_max(int x,int y){
+	if(x>y) swap(x,y);
+	int d=log2(y-x+1);
+	return max(mx[x][d],mx[y-(1<<d)+1][d]);
+}
+
+int main(){
+	scanf("%d %d",&n,&q);
+	for(int i=1;i<=n;i++){
+		scanf("%d",&mi[i][0]);
+		mx[i][0]=mi[i][0];
+	}
+	st();
+	int u,v;
+	while(q--){
+		scanf("%d %d",&u,&v);
+		printf("%d\n",query_max(u,v)-query_min(u,v));
+	}
+	
+	
+	return 0;
+}
+
+
