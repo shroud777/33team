@@ -3,6 +3,43 @@
 //思路：如果只要一个背包，我们可以考虑贪心想法，尽量先装轻的，然后装到极限为止，但是这里有两个背包，可能出现这样的情况：第一个背包重为 10，第二个为 7，然后又 3 个重量为 3 的剑，2 个重量为 4 的斧头
 //这样一味的贪心可能导致某个背包有空缺，造成一定的损失。所以我们必须要枚举所有方案，这里只要两个人，那么我们只需要枚举我的背包装多少剑，其他信息全部可以推算得出，仆人的背包贪心求解，再求出最优解
 
+
+//改良标程
+
+#include <bits/stdc++.h>
+
+using namespace std;
+typedef long long ll;
+const int maxn=1e5+10;
+
+ll p,f,cnts,cntw,s,w;
+
+ll cal(ll w,ll x,ll y,ll wx,ll wy){
+	if(wx>wy) return cal(w,y,x,wy,wx);
+	ll res=min(x,w/wx);
+	return res+min((w-res*wx)/wy,y);
+}
+
+int main(){
+	int t;
+	scanf("%d",&t);
+	while(t--){
+		scanf("%lld %lld %lld %lld %lld %lld",&p,&f,&cnts,&cntw,&s,&w);
+		ll ans=0;
+		for(int i=0;i<=cnts;i++){
+			if(1ll*i*s>p) break;
+			int j=min((p-i*s)/w,cntw);
+			ans=max(ans,i+j+cal(f,cnts-i,cntw-j,s,w));
+		}
+		printf("%lld\n",ans);
+	}
+	return 0;
+}
+
+
+
+//劣质现场版
+
 #include <bits/stdc++.h>
  
 using namespace std;
