@@ -2,6 +2,8 @@
 
 //思路：根据 01 分数规划模型建图即可，每条边的权值变成 ce-mid*le,在图中求得最小生成树找得 sigma(ce)/sigma(le) 的最小值
 //如果最小生成树之和大于 0，说明最小值比 mid 大，l 变成 mid，反之 r 变成 mid
+
+
 #include <bits/stdc++.h>
 
 using namespace std;
