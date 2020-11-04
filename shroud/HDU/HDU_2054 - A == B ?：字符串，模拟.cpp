@@ -20,10 +20,10 @@ string get_prefix(string s){
 	bool f=0;
 	string res;
 	for(int i=0;i<s.size();i++){
-		if(s[i]=='.') return res; 		      //截取小数点之前的除前导零前缀 
-		if(!f&&s[i]!='0'&&s[i]!='-') f=1;  //如果有 1~9 的数字出现，那么前导零就不会再出现了
-		if(f) res+=s[i];   				         //前导零不出现之后，数字就可以直接加入到前缀中
-										                  //c++ string 用起来和 java 差不多，可以直接 s1+=s2; or s1=s1+s2;
+		if(s[i]=='.') return res; 		  //截取小数点之前的除前导零前缀 
+		if(!f&&s[i]!='0'&&s[i]!='-') f=1;  	  //如果有 1~9 的数字出现，那么前导零就不会再出现了
+		if(f) res+=s[i];   		          //前导零不出现之后，数字就可以直接加入到前缀中
+							 //c++ string 用起来和 java 差不多，可以直接 s1+=s2; or s1=s1+s2;
 	}
 	return res;
 }
@@ -41,10 +41,10 @@ int main(){
 		if((s1[0]=='-'&&s2[0]!='-')||(s1[0]!='-'&&s2[0]=='-')){     //首先判断符号，放在最开始判断比较方便 
 			puts("NO");continue;
 		}
-		if(get_prefix(s1)!=get_prefix(s2)){						     // 1 
+		if(get_prefix(s1)!=get_prefix(s2)){						 // 1 
 			puts("NO");continue;
 		}  															 
-																	//2~9
+												//2~9
 		if(check(s1)) reverse(s1.begin(),s1.end()),t1=get_prefix(s1); //reverse 函数，更多细节可以百度，这里就是翻转整个字符串 
 		if(check(s2)) reverse(s2.begin(),s2.end()),t2=get_prefix(s2);
 		if(t1!=t2){
