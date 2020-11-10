@@ -6,6 +6,7 @@
 
 //思路：如果按照正常建边，那么不说时间复杂度，连空间都不够用
 //这里考虑使用线段树优化建图，具体如下：
+https://github.com/shroud777/33team/blob/patch-2/shroud/%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E7%BA%BF%E6%AE%B5%E6%A0%91/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%BB%BA%E5%9B%BE.md
 //这里线段树建完图之和就变成了入边到一个集合，和一个集合到出边的模板题，最后跑一个Dijkstra求单源最短路即可
 
 #include <bits/stdc++.h>
