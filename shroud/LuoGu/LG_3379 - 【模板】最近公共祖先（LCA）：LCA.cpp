@@ -275,8 +275,7 @@ int lca(int u,int v){
 		u=top[u];
 		u=f[u];
 	}
-	if(dep[u]>dep[v]) return v;
-	return u;
+	return dep[u]>dep[v]?v:u; 
 }
 
 int main(){
