@@ -219,3 +219,79 @@ int main(){
 	} 
 	return 0;
 } 
+
+
+//树链剖分
+
+
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long ll;
+const int maxn=5e5+10; 
+
+int n,m,s;
+int head[maxn],to[maxn<<1],nex[maxn<<1],tot=0;
+int dep[maxn],son[maxn],top[maxn],f[maxn],sz[maxn];
+
+inline void add(int u,int v){
+	to[++tot]=v;
+	nex[tot]=head[u];
+	head[u]=tot;
+}
+
+void dfs_1(int u,int fa){
+	dep[u]=dep[fa]+1;
+	sz[u]=1;
+	f[u]=fa;
+	int mx=0;
+	for(int i=head[u];i;i=nex[i]){
+		int v=to[i];
+		if(v==fa) continue;
+		dfs_1(v,u);
+		sz[u]+=sz[v];
+		if(sz[v]>mx){
+			mx=sz[v];
+			son[u]=v;
+		}
+	}
+}
+
+void dfs_2(int u,int topf){
+	top[u]=topf;
+	if(son[u]) dfs_2(son[u],topf);
+	for(int i=head[u];i;i=nex[i]){
+		int v=to[i];
+		if(v==f[u]||v==son[u]) continue;
+		dfs_2(v,v);
+	}
+}
+
+int lca(int u,int v){
+	while(top[u]!=top[v]){
+		if(dep[top[u]]<dep[top[v]]) swap(u,v);
+		u=top[u];
+		u=f[u];
+	}
+	if(dep[u]>dep[v]) return v;
+	return u;
+}
+
+int main(){
+	scanf("%d %d %d",&n,&m,&s);
+	int u,v;
+	for(int i=1;i<n;i++){
+		scanf("%d %d",&u,&v);
+		add(u,v);
+		add(v,u);
+	}
+	dfs_1(s,0);
+	dfs_2(s,s);
+	while(m--){
+		scanf("%d %d",&u,&v);
+		printf("%d\n",lca(u,v));
+	}
+	return 0;
+} 
