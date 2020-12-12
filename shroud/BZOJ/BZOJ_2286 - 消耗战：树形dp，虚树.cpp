@@ -4,6 +4,7 @@
 //那么显然 dp[u]=min(Σdp[v],mn[u])(v 代表 u 的子节点)
 //但是有 q 组询问，我们不能考虑暴力dp，这里我们就要使用虚树，对所有有用的结点和它们的 lca 建立一棵虚树，然后跑树形 dp，因为 k 的和很小，我们也能在 O(n) 内完成
 //对于虚树的构建，详情参考：
+//https://github.com/shroud777/33team/new/patch-2/shroud/%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%A0%91%E5%BD%A2DP
 
 #include <bits/stdc++.h>
 
