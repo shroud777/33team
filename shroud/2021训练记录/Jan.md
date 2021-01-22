@@ -10,6 +10,7 @@
 - CF_1369A - FashionabLee：简单几何
 
 ## 2020.1.21
+- CF_1474D - Cleaning：枚举，前缀和
 - CF_1474C - Array Destruction：枚举，模拟
 - CF_1474B - Different Divisors：质数，约数
 - CF_1474A - Puzzle From the Future：模拟
