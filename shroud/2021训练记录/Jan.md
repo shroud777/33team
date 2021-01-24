@@ -4,6 +4,7 @@
 
 
 ## 2020.1.23
+- CF_1426D - Non-zero Segments：前缀和，贪心
 - CF_1426C - Increase and Copy：数学
 - CF_1426B - Symmetric Matrix：模拟，构造
 - CF_1426A - Floor Number：模拟
