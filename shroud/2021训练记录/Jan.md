@@ -4,7 +4,7 @@
 
 
 ## 2020.1.23
-- CF_1426B - 
+- CF_1426B - Symmetric Matrix：模拟
 - CF_1426A - Floor Number：模拟
 
 ## 2020.1.22
