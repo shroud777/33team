@@ -1,7 +1,11 @@
 1.21-1.31
 ### Codeforces 场次：0
-### Codeforces(Virtual participation) 场次：2
+### Codeforces(Virtual participation) 场次：3
 
+
+## 2020.1.23
+- CF_1426B - 
+- CF_1426A - Floor Number：模拟
 
 ## 2020.1.22
 - CF_1369D - TediousLee：递推，规律
