@@ -3,6 +3,7 @@
 ### Codeforces(Virtual participation) 场次：3
 
 ## 2020.1.24
+- CF_1350E - Orac and Game of Life：BFS，模拟
 - CF_1350D - Orac and Medians：构造，思维
 
 ## 2020.1.23
