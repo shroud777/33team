@@ -2,9 +2,11 @@
 ### Codeforces 场次：0
 ### Codeforces(Virtual participation) 场次：3
 
+## 2020.1.24
+- CF_1350D - Orac and Medians：构造，思维
 
 ## 2020.1.23
-- CF_1426E - Rock, Paper, Scissors：枚举，贪心，最小费用最大流
+- CF_1426E - Rock, Paper, Scissors：枚举，贪心，最小费用最大流，思维
 - CF_1426D - Non-zero Segments：前缀和，贪心
 - CF_1426C - Increase and Copy：数学
 - CF_1426B - Symmetric Matrix：模拟，构造
