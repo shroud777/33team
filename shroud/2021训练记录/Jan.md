@@ -5,6 +5,7 @@
 # 题目备选：
 https://codeforces.ml/contest/1353/problem/F （DP）
 https://codeforces.com/contest/1426/problem/F （DP，组合数学）
+https://codeforces.ml/contest/1312/problem/E  （DP）
 
 ## 2020.1.25
 - CF_1312C - Adding Powers：优先队列，贪心，数学
