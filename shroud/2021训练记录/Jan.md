@@ -6,6 +6,9 @@
 https://codeforces.ml/contest/1353/problem/F （DP）
 https://codeforces.com/contest/1426/problem/F （DP，组合数学）
 
+## 2020.1.25
+- CF_1312C - Adding Powers：优先队列，贪心，数学
+
 ## 2020.1.24
 - CF_1353E - K-periodic Garland：DP，思维
 - CF_1352G - Special Permutation：构造
