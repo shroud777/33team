@@ -1,6 +1,6 @@
 1.21-1.31
-### Codeforces 场次：0
-### Codeforces(Virtual participation) 场次：3
+### Codeforces 场次：1
+### Codeforces(Virtual participation) 场次：4
 
 ## 2020.1.24
 - CF_1350E - Orac and Game of Life：BFS，模拟
