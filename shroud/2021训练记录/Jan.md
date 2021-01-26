@@ -3,6 +3,7 @@
 ### Codeforces(Virtual participation) 场次：4
 
 ## 2020.1.24
+- CF_1352G - Special Permutation：构造
 - CF_1352F - Binary String Reconstruction：构造
 - CF_1352E - Special Elements：前缀和，尺取
 - CF_1350E - Orac and Game of Life：BFS，模拟
