@@ -9,6 +9,7 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 
 ## 2020.1.25
+- CF_1303D - Fill The Bag：贪心，bitsmasks
 - CF_1303C - Perfect Keyboard：贪心，模拟，并查集，递归
 - CF_1303B - National Project：贪心
 - CF_1312D - Count the Arrays：组合数学
