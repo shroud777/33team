@@ -6,6 +6,7 @@
 https://codeforces.ml/contest/1353/problem/F （DP）
 https://codeforces.com/contest/1426/problem/F （DP，组合数学）
 https://codeforces.ml/contest/1312/problem/E  （DP）
+https://codeforces.ml/contest/1303/problem/E  （DP）
 
 ## 2020.1.25
 - CF_1303C - Perfect Keyboard：贪心，模拟，并查集，递归
