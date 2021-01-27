@@ -9,7 +9,9 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 
 ## 2020.1.26
-- CF_	1249B2 - Books Exchange (hard version)：记忆化搜索，并查集
+- CF_	1249C2 - Good Numbers (hard version)：贪心
+- CF_	1249C1 - Good Numbers (easy version)：01背包，贪心
+- CF_	1249B2 - Books Exchange (hard version)：递归，并查集
 
 ## 2020.1.25
 - CF_1303D - Fill The Bag：贪心，bitsmasks
