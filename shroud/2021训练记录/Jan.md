@@ -8,6 +8,7 @@ https://codeforces.com/contest/1426/problem/F （DP，组合数学）
 https://codeforces.ml/contest/1312/problem/E  （DP）
 
 ## 2020.1.25
+- CF_1303C - Perfect Keyboard：贪心，模拟，并查集，递归
 - CF_1303B - National Project：贪心
 - CF_1312D - Count the Arrays：组合数学
 - CF_1312C - Adding Powers：优先队列，贪心，数学
