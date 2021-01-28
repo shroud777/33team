@@ -9,6 +9,10 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
+## 2020.1.27
+- CF_1475B - New Year's Number：约数
+- CF_1475A - Odd Divisor：约数
+
 ## 2020.1.26
 - CF_1249E - By Elevator or Stairs?：DP，前缀和
 - CF_1249D2 - Too Many Segments (hard version)：贪心，优先队列，线段树
