@@ -9,6 +9,8 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 
 ## 2020.1.26
+- CF_1249D2 - Too Many Segments (hard version)：贪心，优先队列，线段树
+- CF_1249D1 - Too Many Segments (easy version)：贪心
 - CF_1249C2 - Good Numbers (hard version)：贪心
 - CF_1249C1 - Good Numbers (easy version)：01背包，贪心
 - CF_1249B2 - Books Exchange (hard version)：递归，并查集
