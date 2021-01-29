@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.1.27
+- CF_1475E - Advertising Agency：组合数学
 - CF_1475D - Cleaning the Phone：贪心，前缀和，二分，尺取
 - CF_1475C - Ball in Berland：容斥原理
 - CF_1475B - New Year's Number：约数
