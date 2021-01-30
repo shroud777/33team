@@ -9,6 +9,9 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
+## 2020.1.28
+- CF_1257A - Two Rival Students：贪心
+
 ## 2020.1.27
 - CF_1475G - Strange Beauty：DP，筛法
 - CF_1475F - Unusual Matrix：模拟
