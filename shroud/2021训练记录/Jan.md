@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.1.28
+- CF_1257C - Dominated Subarray：贪心
 - CF_1257B - Magic Stick：规律
 - CF_1257A - Two Rival Students：贪心
 
