@@ -10,7 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.1.29
-- CF_1478B - Nezzar and Lucky Number：
+- CF_1478B - Nezzar and Lucky Number：思维，完全背包
 - CF_1478A - Nezzar and Colorful Balls：模拟
 
 ## 2020.1.28
