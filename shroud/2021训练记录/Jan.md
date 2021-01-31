@@ -9,6 +9,10 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
+## 2020.1.29
+- CF_1478B - Nezzar and Lucky Number：
+- CF_1478A - Nezzar and Colorful Balls：模拟
+
 ## 2020.1.28
 - CF_1257E - The Contest：思维，树状数组，LIS，DP
 - CF_1257D - Yet Another Monster Killing Problem：贪心
