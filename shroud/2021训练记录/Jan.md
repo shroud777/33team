@@ -10,7 +10,8 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.1.29
-- CF_1478E - Nezzar and Binary String：线段树
+- CF_1478F - Nezzar and Nice Beatmap：贪心，计算几何
+- CF_1478E - Nezzar and Binary String：线段树(lazy-tag)
 - CF_1478D - Nezzar and Board：裴蜀定理，约数
 - CF_1478C - Nezzar and Symmetric Array：思维
 - CF_1478B - Nezzar and Lucky Number：思维，完全背包
