@@ -2,6 +2,10 @@
 
 //思路：首先很明显，分母是一个价格的前缀和，那我们增加第一个物品的价格，后面相当于一劳永逸，所以我们只需要用一个变量维护前缀和即可
 //接着我们列出式子 pi*100/(sigma(pj)(j<i)+x) <= k     pi*100-k*sigma(pj)(j<i)<=k*x，所以 x 的取值范围可以找到，只需要向上取整就可以得到应该加上的值了，然后前缀和和答案同时加上 x 即可
+//由于增加的值 x 与满足要求与否满足单调性，我们可以二分答案，值域是 [0,1e11+1]
+
+
+//模拟：
 
 #include <bits/stdc++.h>
 
@@ -27,6 +31,44 @@ int main(){
                 res+=temp;
             }
             res+=p[i];
+        }
+        cout<<ans<<endl;
+    }
+    return 0;
+}
+
+//二分：
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long ll;
+
+const int maxn=5e3+10;
+
+ll n,k,p[maxn];
+
+bool check(ll x){
+    x+=p[1];
+    for(int i=2;i<=n;i++){
+        if(p[i]*100>k*x) return false;
+        x+=p[i];
+    }
+    return true;
+}
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        cin>>n>>k;
+        for(int i=1;i<=n;i++) scanf("%lld",&p[i]);
+        ll l=0,r=1e11+5,ans;
+        while(l<=r){
+            ll mid=l+r>>1;
+            if(check(mid)) ans=mid,r=mid-1;
+            else l=mid+1;
         }
         cout<<ans<<endl;
     }
