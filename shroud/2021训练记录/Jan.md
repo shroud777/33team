@@ -10,7 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.1.30
-- CF_1476B - Inflation：贪心，模拟
+- CF_1476B - Inflation：贪心，模拟，二分
 - CF_1476A - K-divisible Sum：数学，思维
 
 ## 2020.1.29
