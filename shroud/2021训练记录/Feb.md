@@ -1,6 +1,6 @@
 2.1-2.28
-### Codeforces 场次：3
-### Codeforces(Virtual participation) 场次：5
+### Codeforces 场次：0
+### Codeforces(Virtual participation) 场次：0
 
 # 题目备选：
 https://codeforces.ml/contest/1353/problem/F （DP）
