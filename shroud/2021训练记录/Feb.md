@@ -13,6 +13,7 @@ https://codeforces.ml/contest/1249/problem/F  （树形DP）
 - CF_1301B - Motarack's Birthday：
 - CF_1301A - Three Strings：模拟
 - HDU_3400 - Line belt：三分
+- POJ_1018 - Communication System：DP
 
 ## 2020.2.2
 - NC_14294 - Butterfly：DP，枚举
