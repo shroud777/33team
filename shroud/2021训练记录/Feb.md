@@ -10,7 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.3
-- CF_1301B - Motarack's Birthday：
+- CF_1301B - Motarack's Birthday：模拟，三分
 - CF_1301A - Three Strings：模拟
 - HDU_3400 - Line belt：三分
 - POJ_1018 - Communication System：DP
