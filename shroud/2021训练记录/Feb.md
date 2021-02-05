@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.4
+- CF_1105C - Ayoub and Lost Array：DP，思维
 - CF_1105B - Zuhair and Strings：模拟
 - CF_1105A - Salem and Sticks：枚举
 
