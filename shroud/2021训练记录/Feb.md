@@ -1,5 +1,5 @@
 2.1-2.28
-### Codeforces 场次：0
+### Codeforces 场次：1
 ### Codeforces(Virtual participation) 场次：2
 
 # 题目备选：
@@ -8,6 +8,13 @@ https://codeforces.com/contest/1426/problem/F （DP，组合数学）
 https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
+
+
+## 2020.2.5
+- CF_1481D - AB Graph：思维
+- CF_1481C - Fence Painting：模拟
+- CF_1481B - New Colony：模拟
+- CF_1481A - Space Navigation：模拟
 
 ## 2020.2.4
 - CF_1105D - Kilani and the Game：多源BFS
