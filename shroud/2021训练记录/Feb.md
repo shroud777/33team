@@ -11,6 +11,7 @@ https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 
 ## 2020.2.5
+- CF_1481E - Sorting Books：DP，贪心
 - CF_1481D - AB Graph：思维
 - CF_1481C - Fence Painting：模拟
 - CF_1481B - New Colony：模拟
