@@ -10,7 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.6
-
+- CF_1391B - Fix You：模拟
 - CF_1391A - Suborrays：构造
 
 ## 2020.2.5
