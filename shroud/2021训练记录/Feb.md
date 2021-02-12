@@ -10,6 +10,8 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.7
+- CF_1480D2 - Painting the Array II：贪心
+- CF_1480D1 - Painting the Array I：贪心
 - CF_1480C - Searching Local Minimum：交互，二分
 - CF_1480B - The Great Hero：贪心
 - CF_1480A - Yet Another String Game：模拟
