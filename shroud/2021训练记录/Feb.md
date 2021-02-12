@@ -9,6 +9,11 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
+## 2020.2.7
+- CF_1480C - Searching Local Minimum：交互，二分
+- CF_1480B - The Great Hero：贪心
+- CF_1480A - Yet Another String Game：模拟
+
 ## 2020.2.6
 - CF_1391D - 505：状压DP
 - CF_1391C - Cyclic Permutations：组合数学
