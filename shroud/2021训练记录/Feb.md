@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.13
+- NC_14704 - 美味菜肴：贪心，01背包
 - NC_14701 - 取数游戏2：区间DP
 - NC_14699 - 队伍配置：01背包
 
