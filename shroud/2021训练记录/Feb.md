@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.14
+- NC_16671 - 金明的预算方案：分组背包
 - NC_16664 - 合唱队形：DP，LIS
 - NC_16655 - 过河：DP，路径压缩，数学
 
