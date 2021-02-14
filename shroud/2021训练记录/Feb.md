@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.14
+- NC_207753 - 古老的牛市，遗迹的天梯：DP
 - NC_16810 - 导弹拦截：LIS，Dilworth定理，二分
 - NC_16671 - 金明的预算方案：分组背包
 - NC_16664 - 合唱队形：DP，LIS
