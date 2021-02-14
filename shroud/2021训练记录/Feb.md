@@ -10,7 +10,8 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.14
-- NC_16655- 过河：DP，路径压缩，数学
+- NC_16664 - 合唱队形：DP，LIS
+- NC_16655 - 过河：DP，路径压缩，数学
 
 ## 2020.2.13
 - NC_16619 - 传球游戏：DP
