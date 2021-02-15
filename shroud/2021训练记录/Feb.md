@@ -9,6 +9,9 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
+## 2020.2.15
+- NC_17193 - 简单瞎搞题：01背包，多重背包
+
 ## 2020.2.14
 - NC_207753 - 古老的牛市，遗迹的天梯：DP
 - NC_16810 - 导弹拦截：LIS，Dilworth定理，二分
