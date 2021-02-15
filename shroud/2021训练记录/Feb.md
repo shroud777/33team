@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.15
+- NC_20471 - [ZJOI2007]棋盘制作：单调栈，DP，悬线法
 - NC_17193 - 简单瞎搞题：背包问题，bitset
 
 ## 2020.2.14
