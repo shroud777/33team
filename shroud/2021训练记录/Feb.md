@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.16
+- CF_915E - Physical Education Lessons：珂朵莉树，动态开点线段树
 - CF_896C - Willem, Chtholly and Seniorious：珂朵莉树
 
 ## 2020.2.15
