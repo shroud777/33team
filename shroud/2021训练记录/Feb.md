@@ -1,6 +1,6 @@
 2.1-2.28
 ### Codeforces 场次：3
-### Codeforces(Virtual participation) 场次：3
+### Codeforces(Virtual participation) 场次：4
 
 # 题目备选：
 https://codeforces.ml/contest/1353/problem/F （DP）
@@ -8,6 +8,9 @@ https://codeforces.com/contest/1426/problem/F （DP，组合数学）
 https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
+
+## 2020.2.17
+- NC_51178 - 没有上司的舞会：树形DP
 
 ## 2020.2.16
 - NC_207781 - 迁徙过程中的河流：DP，贪心
