@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.17
+- NC_15033 - 小G有一个大树：树的重心
 - NC_51178 - 没有上司的舞会：树形DP
 
 ## 2020.2.16
