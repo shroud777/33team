@@ -10,7 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.17
-- CF_
+- CF_1487B - Cat Cycle：模拟
 - CF_1487A - Arena：模拟
 - NC_24953 - Cell Phone Network：树形DP
 - NC_15033 - 小G有一个大树：树的重心
