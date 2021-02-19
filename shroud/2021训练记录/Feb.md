@@ -10,7 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.18
-- CF_1490A - Dense Array：贪心，数学
+- CF_1490A - Dense Array：贪心，数学，模拟
 
 ## 2020.2.17
 - CF_1487E - Cheap Dinner：DP，ST表，set
