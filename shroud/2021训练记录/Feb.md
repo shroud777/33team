@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.17
+- CF_1487E - Cheap Dinner：DP，ST表，set
 - CF_1487D - Pythagorean Triples：数学，枚举
 - CF_1487C - Minimum Ties：构造
 - CF_1487B - Cat Cycle：模拟
