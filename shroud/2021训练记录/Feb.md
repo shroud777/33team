@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.18
+- CF_1490G - Old Floppy Drive：前缀和，二分
 - CF_1490F - Equalize the Array：思维，枚举
 - CF_1490E - Accidental Victory：模拟，前缀和，贪心，二分
 - CF_1490D - Permutation Transformation：递归
