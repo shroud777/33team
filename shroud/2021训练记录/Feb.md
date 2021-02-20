@@ -9,6 +9,9 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
+## 2020.2.19
+- NC_50505 - 二叉苹果树：树形DP，记忆化搜索，树上背包
+
 ## 2020.2.18
 - CF_1490G - Old Floppy Drive：前缀和，二分
 - CF_1490F - Equalize the Array：思维，枚举
