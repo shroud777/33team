@@ -9,6 +9,9 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
+## 2020.2.21
+- POJ_3370 - Halloween treats：鸽巢原理
+
 ## 2020.2.19
 - NC_210473 - 吉吉王国：树形DP，二分
 - NC_22598 - Rinne Loves Edges：树形DP
