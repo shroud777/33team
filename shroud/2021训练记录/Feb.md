@@ -9,6 +9,9 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
+## 2020.2.22
+- NC_13249 - 黑白树：树形DP，贪心
+
 ## 2020.2.21
 - HDU_4135 - Co-prime：容斥原理，约数
 - 2019ICPC沈阳_L - Flower：二分，鸽巢原理
