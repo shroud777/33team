@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.22
+- NC_15748 - 旅游：树形DP
 - NC_13249 - 黑白树：树形DP，贪心
 
 ## 2020.2.21
