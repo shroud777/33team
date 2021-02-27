@@ -9,6 +9,9 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
+## 2020.2.23
+- CF_
+- CF_1492A - Three swimmers：数学
 
 ## 2020.2.22
 - NC_51179 - 选课：树形DP，树上背包
