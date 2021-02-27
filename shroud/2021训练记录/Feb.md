@@ -10,7 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.23
-- CF_
+- CF_1492B - Card Deck：模拟，贪心
 - CF_1492A - Three swimmers：数学
 
 ## 2020.2.22
@@ -42,7 +42,7 @@ https://codeforces.ml/contest/1249/problem/F  （树形DP）
 - CF_1487E - Cheap Dinner：DP，ST表，set
 - CF_1487D - Pythagorean Triples：数学，枚举
 - CF_1487C - Minimum Ties：构造
-- CF_1487B - Cat Cycle：模拟
+- CF_1487B - Cat Cycle：模拟1492B - Card Deck
 - CF_1487A - Arena：模拟
 - NC_24953 - Cell Phone Network：树形DP
 - NC_15033 - 小G有一个大树：树的重心
