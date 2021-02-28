@@ -1,5 +1,5 @@
 2.1-2.28
-### Codeforces 场次：3
+### Codeforces 场次：4
 ### Codeforces(Virtual participation) 场次：4
 
 # 题目备选：
@@ -10,6 +10,8 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.2.23
+- CF_1492D - Genius's Gambit：思维，构造
+- CF_1492C - Maximum width：模拟，贪心
 - CF_1492B - Card Deck：模拟，贪心
 - CF_1492A - Three swimmers：数学
 
