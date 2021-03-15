@@ -10,6 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.3.15
+- CF_1253D - Harmonious Graph：思维，连通量，并查集
 - CF_1253C - Sweets Eating：贪心，前缀和
 - CF_1253B - Silly Mistake：模拟
 - CF_1253A - Single Push：模拟
