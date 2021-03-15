@@ -9,7 +9,13 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
-## 3030.3.2-3.14 生病修养
+## 2020.3.15
+- CF_1253C - Sweets Eating：贪心，前缀和
+- CF_1253B - Silly Mistake：模拟
+- CF_1253A - Single Push：模拟
+
+## 2020.3.2-3.14 
+### 生病修养
 
 ## 2020.3.1
 - CF_1491D - Zookeeper and The Infinite Zoo：思维，位运算
