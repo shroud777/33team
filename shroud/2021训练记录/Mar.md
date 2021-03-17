@@ -9,6 +9,9 @@ https://codeforces.ml/contest/1312/problem/E  （DP）
 https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
+## 2020.3.16
+- CF_1185G1 - Playlist for Polycarp (easy version)：状压DP，二进制枚举，DP，组合数学
+
 ## 2020.3.15
 - CF_1253D - Harmonious Graph：思维，连通量，并查集
 - CF_1253C - Sweets Eating：贪心，前缀和
