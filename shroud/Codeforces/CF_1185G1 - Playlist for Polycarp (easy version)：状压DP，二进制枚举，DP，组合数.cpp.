@@ -1,0 +1,121 @@
+//题意：现在有 n 首歌，每首歌都有 ti（播放时间）和 gi（歌曲类型），现在求若干首歌曲按照一定顺序播放并且相邻歌曲类型不重复且播放时间正好为 T 的方案数
+
+//思路：由于 n<=15，我们首先可以考虑利用二进制枚举来枚举歌曲组合，并且我们可以通过 DP 来确定出方案的排列数，然后在根据每种类型的歌曲数量得出多重集的排列数
+//每次枚举歌曲组合的歌曲数与类型已经确定，我们用 DP 来解决方案排列，其中 DP 状态为 (i,j,x,y,z) 代表第 i 首歌播放 j 种类型的歌并且 1 2 3 类型分别剩余 x y z 首
+//然后对于种类 i，由于上述排列方案已经确定，我们只需要决定这些标签的排列，即在方案数上 * cnt[i]
+//我们只要表示清楚歌曲选取的状态，就能完美的用 DP 来求出方案数，状态压缩DP 解决这道题再合适不过了
+//这道题我们注重已经选取的歌曲，同时更加注重最后一首选的歌曲类型，上一种做法的线性DP通过五位状态描述清楚了这些情况
+//dp(i,j) 代表已经选了 i 这个 mask 类型的歌曲，并且最后一首为 j 类型，那么显然我们只需要枚举 mask 类型，然后枚举歌曲类型，最后枚举这个状态下选哪首歌即可
+
+//方法1：线性DP+二进制枚举+组合数学
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+const int maxn=1e6+10;
+const int p=1e9+7;
+
+typedef long long ll;
+typedef pair<int,int> pii;
+
+int n,T;
+int t[maxn],g[maxn];
+int cnt[10];
+ll dp[5][20][20][20][20];
+ll fac[maxn];
+
+//dp(i,j,x,y,z)
+//第 j 个颜色为 i 时，剩余个数分别为 x,y,z
+
+int main(){
+    fac[0]=1;
+    for(int i=1;i<=25;i++) fac[i]=fac[i-1]*i%p;
+    scanf("%d %d",&n,&T);
+    for(int i=1;i<=n;i++) scanf("%d %d",&t[i],&g[i]);
+    ll ans=0;
+    for(int i=1;i<=(1<<n)-1;i++){
+        for(int j=1;j<=3;j++) cnt[j]=0;
+        int temp=i,idx=0,res=0,tot=0;
+        while(temp){
+            ++idx;
+            if(temp&1) res+=t[idx],tot++,cnt[g[idx]]++;
+            temp>>=1;
+        }
+        if(res!=T) continue;
+        //一共有 tot 个
+        memset(dp,0,sizeof dp);
+        if(cnt[1]) dp[1][1][cnt[1]-1][cnt[2]][cnt[3]]=1;
+        if(cnt[2]) dp[2][1][cnt[1]][cnt[2]-1][cnt[3]]=1;
+        if(cnt[3]) dp[3][1][cnt[1]][cnt[2]][cnt[3]-1]=1;
+        for(int j=2;j<=tot;j++){
+            for(int x=0;x<=cnt[1];x++){
+                if(x>tot-j) break;
+                for(int y=0;y<=cnt[2];y++){
+                    int z=tot-j-x-y;
+                    dp[1][j][x][y][z]=(dp[2][j-1][x+1][y][z]+dp[3][j-1][x+1][y][z])%p;
+                    dp[2][j][x][y][z]=(dp[1][j-1][x][y+1][z]+dp[3][j-1][x][y+1][z])%p;
+                    dp[3][j][x][y][z]=(dp[1][j-1][x][y][z+1]+dp[2][j-1][x][y][z+1])%p;
+                }
+            }
+        }
+        ll sum=((dp[1][tot][0][0][0]+dp[2][tot][0][0][0])%p+dp[3][tot][0][0][0])%p;
+        for(int j=1;j<=3;j++) sum=sum*fac[cnt[j]]%p;
+        ans=(ans+sum)%p;
+    }
+    printf("%lld\n",ans);
+}
+
+//状压DP
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+const int maxn=1e6+10;
+const int p=1e9+7;
+
+typedef long long ll;
+typedef pair<int,int> pii;
+
+int n,T;
+int t[maxn],g[maxn];
+ll dp[4][maxn];
+
+
+
+int main(){
+    scanf("%d %d",&n,&T);
+    for(int i=1;i<=n;i++) scanf("%d %d",&t[i],&g[i]);
+    ll ans=0;
+    dp[0][0]=1;
+    for(int j=0;j<(1<<n);j++){
+        for(int k=0;k<=3;k++){
+            for(int i=1;i<=n;i++){
+                if(!(j&(1<<i-1))&&g[i]!=k){
+                    dp[g[i]][j|(1<<i-1)]=(dp[g[i]][j|(1<<i-1)]+dp[k][j])%p;
+                }
+            }
+            int sum=0;
+            for(int i=1;i<=n;i++){
+                if(j&(1<<i-1)) sum+=t[i];
+            }
+            if(T==sum) ans=(ans+dp[k][j])%p;
+        }
+    }
+    printf("%lld\n",ans);
+    return 0;
+}
+
+
+// ░░░░░░░▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▄░░░░░░
+// ░░░░░░█░░▄▀▀▀▀▀▀▀▀▀▀▀▀▀▄░░█░░░░░
+// ░░░░░░█░█░▀░░░░░▀░░▀░░░░█░█░░░░░
+// ░░░░░░█░█░░░░░░░░▄▀▀▄░▀░█░█▄▀▀▄░
+// █▀▀█▄░█░█░░▀░░░░░█░░░▀▄▄█▄▀░░░█░
+// ▀▄▄░▀██░█▄░▀░░░▄▄▀░░░A░░░░░C░░▀▄
+// ░░▀█▄▄█░█░░░░▄░░█░░░▄█░░░▄░▄█░░█
+// ░░░░░▀█░▀▄▀░░░░░█░██░▄░░▄░░▄░███
+// ░░░░░▄█▄░░▀▀▀▀▀▀▀▀▄░░▀▀▀▀▀▀▀░▄▀░
+// ░░░░█░░▄█▀█▀▀█▀▀▀▀▀▀█▀▀█▀█▀▀█░░░
+// ░░░░▀▀▀▀░░▀▀▀░░░░░░░░▀▀▀░░▀▀░░░░
