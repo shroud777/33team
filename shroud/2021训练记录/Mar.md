@@ -10,7 +10,7 @@ https://codeforces.ml/contest/1303/problem/E  （DP）
 https://codeforces.ml/contest/1249/problem/F  （树形DP）
 
 ## 2020.3.18
-- CF_1497E1 - Square-free division (easy version)：贪心，质因数分解
+- CF_1497E1 - Square-free division (easy version)：贪心，思维，质因数分解
 - CF_1499D - The Number of Pairs：DP，思维
 - CF_1497C2 - k-LCM (hard version)：构造
 - CF_1497C1 - k-LCM (easy version)：构造
